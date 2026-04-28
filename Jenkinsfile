@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {  // Fixed: added quotes around stage name
             steps {
-                git branch: 'mwin', url: 'https://github.com/fi-maker/CICD-pipeline-jenkins-ec2.git'
+                git branch: 'main', url: 'https://github.com/fi-maker/CICD-pipeline-jenkins-ec2.git'
             }
         }
         stage('Build Docker Image') {
